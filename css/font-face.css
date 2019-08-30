@@ -32,14 +32,14 @@ font-style: italic;
 
 @font-face {
 font-family: 'IBM Plex Sans';
-src: url('../font/IBM-plex-sans/IBM-plex-sans-regular.otf') format('opentype');
+src: url('../font/IBM-plex-sans/IBM-plex-sans-text.otf') format('opentype');
 font-weight: normal;
 font-style: normal;
 }
 
 @font-face {
 font-family: 'IBM Plex Sans';
-src: url('../font/IBM-plex-sans/IBM-plex-sans-italic.otf') format('opentype');
+src: url('../font/IBM-plex-sans/IBM-plex-sans-text-italic.otf') format('opentype');
 font-weight: normal;
 font-style: italic;
 }
