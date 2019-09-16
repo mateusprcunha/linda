@@ -9,6 +9,7 @@
     --background-color: #f3ffe8;
     --support-color: #fffeef;
     --inverse-color: #ffffff;
+    --hover-color: #f0f7dc;
 
     --title-font: 'Alegreya';
     --text-font: 'IBM Plex Sans';
@@ -246,7 +247,6 @@ nav ul li a:hover {
 }
 
 .project-card a:hover {
-    background-color: var(--support-color);
     cursor: pointer;
 }
 
@@ -307,6 +307,10 @@ nav ul li a:hover {
 
 .table a:after {
     content: '↗';
+}
+
+.table-row h6, .table-row p {
+    max-width: 600px;
 }
 
 .link-top {
@@ -510,9 +514,16 @@ nav ul li a:hover {
     display: block;
 }
 
+main .project-card:nth-child(even),
+#portfolio .project-card:nth-child(even),
 #member .table-cell:nth-child(even),
 #publish .table-cell:nth-child(odd) {
     background-color: var(--support-color);
+}
+
+main .project-card:hover,
+#portfolio .project-card:hover{
+    background-color: var(--hover-color);
 }
 
 #portfolio-label {
@@ -838,8 +849,7 @@ nav ul li a:hover {
         border-bottom: none;
         position: fixed;
         top: var(--header-height);
-        /*        left: -25px;*/
-        left: 0;
+        left: -3px;
         transition: transform 250ms ease-in-out;
         box-sizing: border-box;
         z-index: 9999;
@@ -875,7 +885,6 @@ nav ul li a:hover {
         -ms-transform: translateX(60vw);
         transform: translateX(60vw);
     }
-
 }
 
 @media (max-width: 767px) {
